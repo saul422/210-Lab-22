@@ -34,7 +34,7 @@ public:
         }
     }
 
-    // Push value at the end
+ // This method inserts a new node at the back of the list
     void push_back(int value) {
         Node* newNode = new Node(value);
         if (!tail) {
@@ -191,10 +191,13 @@ int main() {
     list.pop_front();
     list.print();
 
+//test popping front and back nodes
     cout << "Pop back: \n";
     list.pop_back();
     list.print();
 
+
+//test deleting a node by position
     cout << "Delete position 2: \n";
     list.delete_pos(2);
     list.print();
